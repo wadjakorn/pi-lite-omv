@@ -154,7 +154,8 @@ apt-get --allow-releaseinfo-change update
 echo "Installing lsb_release..."
 apt-get --yes --no-install-recommends --reinstall install lsb-release
 
-arch="$(dpkg --print-architecture)"
+# arch="$(dpkg --print-architecture)"
+arch="arm64"
 
 # exit if not supported architecture
 case ${arch} in
